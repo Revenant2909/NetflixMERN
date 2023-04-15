@@ -13,7 +13,7 @@ export default function ListItem({index,item}){
         try {
             const res = await axios.get("/movies/find/"+item ,{
               headers:{
-                token:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjMwZWQxMTAxMjhmOWRlYWM5NGEwYSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MDA0MDk4NiwiZXhwIjoxNjgwNDcyOTg2fQ.AhH84AZ0brJRUW3L1l10WIGCZCu_LgCI1f5YAahcE2I"
+                token:"Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,
               },
             });
             setMovie(res.data);
@@ -23,6 +23,7 @@ export default function ListItem({index,item}){
       };
       getMovie();
     },[item]);
+
   return (
     <Link to={{pathname:"/watch", movie:movie}}>
     <div className="listItem"
@@ -30,7 +31,7 @@ export default function ListItem({index,item}){
     style={{left:isHovered && index*225 + index*2.5+2}} 
     onMouseEnter={()=>setIsHovered(true)}
     onMouseLeave={()=>setIsHovered(false)}>
-       <img src={movie.img} alt="error" border="0"/>
+       <img src={movie?.imgSm} alt="" border="0"/>
      {isHovered && (
        <>
      <video src={movie.trailer} autoPlay={true} loop/>

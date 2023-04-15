@@ -3,14 +3,14 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./featured.scss";
 
-function Featured({type}) {
+function Featured({type,setGenre}) {
     const [content,setContent] = useState({});
     useEffect(()=>{
         const getRandomContent = async ()=> {
             try {
                 const res = await axios.get(`/movies/random?type=${type}`,{
                     headers:{
-                      token:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjMwZWQxMTAxMjhmOWRlYWM5NGEwYSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MDA0MDk4NiwiZXhwIjoxNjgwNDcyOTg2fQ.AhH84AZ0brJRUW3L1l10WIGCZCu_LgCI1f5YAahcE2I"
+                      token:"Bearer "+ JSON.parse(localStorage.getItem("user")).accessToken,
                     },
                   });
                 setContent(res.data[0]);
@@ -26,7 +26,7 @@ function Featured({type}) {
         {type && (
             <div className="category">
                 <span>{type==="movies" ? "Movies" : "Tv Shows"}</span>
-                <select name="genre" id="genre">
+                <select name="genre" id="genre" onChange={(e)=>setGenre(e.target.value)}>
                     <option>Genre</option>
                      <option value="hindi">Hindi</option>
                      <option value="tamil">Tamil</option>
@@ -59,9 +59,9 @@ function Featured({type}) {
                 </select>
             </div>
         )}
-        <img src={content.imgTitle} alt="wallpaperflare-com-wallpaper" width="100%"border="0"/>
+        <img src={content.img} alt="" width="100%"border="0"/>
         <div className="info">
-        <img src={content.imgSm} alt="lostinspace-removebg" border="0"/>
+        <img src={content.imgTitle} alt="" border="0"/>
             <span className="description">{content.desc}</span>
             <div className="buttons">
                 <button className="play">

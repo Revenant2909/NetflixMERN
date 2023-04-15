@@ -1,6 +1,6 @@
 import React from 'react'
 import "./sidebar.css";
-import { AttachMoneyOutlined, FeedbackOutlined, LineStyle, MailOutlineOutlined, MessageOutlined, PeopleAltOutlined, PlayCircleOutline, Report, Timeline, TrendingUp, WorkOutlineOutlined } from '@mui/icons-material';
+import { AttachMoneyOutlined, FeedbackOutlined, LineStyle, ListAltOutlined, MailOutlineOutlined, MessageOutlined, PeopleAltOutlined, PlayCircleOutline, Report, Timeline, TrendingUp, WorkOutlineOutlined } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
 
@@ -40,10 +40,12 @@ export default function Sidebar() {
                             Movies
                         </li>
                         </Link>
+                        <Link to="/lists" className='link'>
                         <li className="sidebarListItem">
-                            <AttachMoneyOutlined className='sidebarIcon'/>
-                            Transactions
+                            <ListAltOutlined className='sidebarIcon'/>
+                            Lists
                         </li>
+                        </Link>
                     </ul>
             </div>
             <div className="sidebarMenu">
