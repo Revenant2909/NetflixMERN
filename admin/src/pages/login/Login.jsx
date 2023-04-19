@@ -13,6 +13,7 @@ export default function Login() {
     }
   return (
    <div className="login">
+        <span className="adminloginheading">Admin Login</span>
         <form className="loginForm">
             <input type="email" placeholder='email' className="loginInput" 
             onChange={(e)=> setEmail(e.target.value)}/>

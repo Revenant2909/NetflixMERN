@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Featured from "../../components/featured/Featured";
 import List from "../../components/list/List";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 import "./home.scss";
 
 export const Home = ({type}) => {
@@ -35,6 +36,7 @@ export const Home = ({type}) => {
         {lists.map((list)=>(
           <List list={list}/>
         ))}
+        <Footer/>
         </div>
  )
 }

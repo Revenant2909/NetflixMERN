@@ -1,0 +1,31 @@
+.footcontainer{
+    margin-top: 200px;
+}
+.footermain{
+       list-style: none;
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row;
+       margin: 50px 50px;
+}
+
+.footer-link-wrapper, .foot-link-content{
+    align-items: center;
+    margin-top: 20px; 
+    
+}
+.footer-link-content{
+    font-weight: 300;
+    color: rgb(132, 132, 132);
+    align-items: center;
+    justify-content: space-between;
+}
+.social-icons{
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+.social-icon{
+    color: aliceblue;
+    margin-right: 25px;
+}
