@@ -1,20 +1,28 @@
 # NetflixMERN
-Hello!
-Welcome to my Netflix clone
-Client side Netflix application
+Hello!<br>
+Welcome to my Netflix clone<br>
+Client side Netflix application<br><br>
+When the user opens the website for the first time the register page is displayed.<br>
+Register Page <br>
 ![Screenshot (32)](https://user-images.githubusercontent.com/101965527/233336463-efe78c97-fabe-450d-88d9-8dde0d6ba8b1.png)
+Login Page once registeration is complete or user clicks Sign In<br>
 ![Screenshot (33)](https://user-images.githubusercontent.com/101965527/233336482-f3cea41b-5b1c-4a94-a241-823547cf5eeb.png)
+After Loggin in user is met with a featured movie or series selected randomly from the database.<br>
 ![Screenshot (34)](https://user-images.githubusercontent.com/101965527/233336490-f40fbcdf-2020-4987-99a4-37ad3ae3342c.png)
+And other series and movies lists are displayed in a simple slider.<br>
 ![Screenshot (35)](https://user-images.githubusercontent.com/101965527/233336494-456b58d9-f59b-47d6-913d-e508d2576f2c.png)
+
 ![Screenshot (36)](https://user-images.githubusercontent.com/101965527/233336500-5b52a1db-bb1c-4e56-a23e-ad3e5440e83a.png)
 ![Screenshot (37)](https://user-images.githubusercontent.com/101965527/233336508-0838adcd-ee85-4c87-9af7-20c6b246b5e7.png)
 ![Screenshot (38)](https://user-images.githubusercontent.com/101965527/233336515-fd78639e-975e-429c-9f26-9fee02e8a37e.png)
 ![Screenshot (39)](https://user-images.githubusercontent.com/101965527/233336521-c0cccf23-1bd3-49ae-844f-fa4ca6f017e3.png)
+Hovering over any of the desired contents displays other relevant information and plays the trailer
 ![Screenshot (40)](https://user-images.githubusercontent.com/101965527/233336530-f93efce2-7fce-4ec1-a251-dc56113e8604.png)
 ![Screenshot (41)](https://user-images.githubusercontent.com/101965527/233336533-17e55e53-0f47-4833-8366-57d3dd24999a.png)
 ![Screenshot (42)](https://user-images.githubusercontent.com/101965527/233336537-1d838cba-8a33-4ac1-897c-43b2d3c55bca.png)
 ![Screenshot (43)](https://user-images.githubusercontent.com/101965527/233336541-cf06e0a0-0268-41ee-ad69-3068057994ae.png)
 ![Screenshot (44)](https://user-images.githubusercontent.com/101965527/233336551-5073c540-c927-42c7-a308-3dc40b813fe6.png)
+Further clicking the thumbnail opens the movie/series in fullscreen mode with a Home button on top left corner.<br>
 ![Screenshot (45)](https://user-images.githubusercontent.com/101965527/233336562-4a778bb5-be99-4d45-a88c-af87ac27d6c6.png)
 Admin Panel to control all the content and users and lists with detailed analytics
 ![Screenshot (50)](https://user-images.githubusercontent.com/101965527/233339108-8af27f83-411e-424e-9c7e-6e9810b836e1.png)
