@@ -1,9 +1,10 @@
-# NetflixMERN
-Hello!<br>
-Welcome to my Netflix clone<br>
+# Netflix clone using MERN
+Hello! Welcome to my Netflix clone<br>
+Thanks for checking out my work!<br>
 Client side Netflix application<br><br>
 When the user opens the website for the first time the register page is displayed.<br>
 Register Page <br>
+
 ![Screenshot (32)](https://user-images.githubusercontent.com/101965527/233336463-efe78c97-fabe-450d-88d9-8dde0d6ba8b1.png)
 Login Page once registeration is complete or user clicks Sign In<br>
 
@@ -34,15 +35,6 @@ Hovering over any of the desired contents displays other relevant information an
 
 
 ![Screenshot (41)](https://user-images.githubusercontent.com/101965527/233336533-17e55e53-0f47-4833-8366-57d3dd24999a.png)
-
-
-![Screenshot (42)](https://user-images.githubusercontent.com/101965527/233336537-1d838cba-8a33-4ac1-897c-43b2d3c55bca.png)
-
-
-![Screenshot (43)](https://user-images.githubusercontent.com/101965527/233336541-cf06e0a0-0268-41ee-ad69-3068057994ae.png)
-
-
-![Screenshot (44)](https://user-images.githubusercontent.com/101965527/233336551-5073c540-c927-42c7-a308-3dc40b813fe6.png)
 
 Further clicking the thumbnail opens the movie/series in fullscreen mode with a Home button on top left corner.<br>
 
@@ -82,3 +74,6 @@ Create New User
 
 ![Screenshot (49)](https://user-images.githubusercontent.com/101965527/233339155-1457812c-4166-45a6-8342-8f1016895587.png)
 
+Feedback is really appreciated.
+
+Have a Nice Day!
