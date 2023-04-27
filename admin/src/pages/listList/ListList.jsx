@@ -19,8 +19,8 @@ export default function ListList() {
     const columns = [
         { field: '_id', headerName: 'ID', width: 220 },
         { field: 'title', headerName: 'Title', width: 200 },
-        { field: 'genre', headerName:  'Genre', width: 100 },
-        { field: 'type', headerName: 'Type', width: 120 },
+        { field: 'genre', headerName:  'Genre', width: 200 },
+        { field: 'type', headerName: 'Type', width: 200 },
         
         {
             field:"action",

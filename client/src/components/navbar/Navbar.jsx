@@ -23,7 +23,9 @@ const Navbar = () => {
             <Link to="/movies" className="link">
             <span>Movies</span>    
             </Link>    
-            <span>New & Popular</span>    
+            <Link to="/latest" className="link">
+            <span>New & Popular</span>   
+            </Link>    
             <span>My List</span>    
             <span>Browse by Languages</span>    
             </div>

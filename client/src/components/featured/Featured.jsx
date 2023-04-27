@@ -2,6 +2,7 @@ import { InfoOutlined, PlayArrow } from "@material-ui/icons";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./featured.scss";
+import { Link } from "react-router-dom";
 
 function Featured({type,setGenre}) {
     const [content,setContent] = useState({});
@@ -20,12 +21,12 @@ function Featured({type,setGenre}) {
         };
         getRandomContent();
     },[type]);
-    console.log(content);
+    // console.log(content);
   return (
     <div className="featured">
         {type && (
             <div className="category">
-                <span>{type==="movies" ? "Movies" : "Tv Shows"}</span>
+                <span>{type==="movie" ? "Movies" : "Tv Shows"}</span>
                 <select name="genre" id="genre" onChange={(e)=>setGenre(e.target.value)}>
                     <option>Genre</option>
                      <option value="hindi">Hindi</option>
@@ -64,10 +65,12 @@ function Featured({type,setGenre}) {
         <img src={content.imgTitle} alt="" border="0"/>
             <span className="description">{content.desc}</span>
             <div className="buttons">
+                <Link to="/watch">
                 <button className="play">
                     <PlayArrow/>
                     <span> Play</span>
                 </button>
+                </Link>
                 <button className="more">
                     <InfoOutlined/>
                     <span> More Info</span>

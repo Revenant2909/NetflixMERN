@@ -3,6 +3,7 @@ import  "./app.scss"
 import Home from "./pages/home/Home"
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
+import Latest from "./pages/latest/Latest";
 import Watch from "./pages/watch/Watch";
 import { BrowserRouter as Router,Redirect,Route,Switch } from 'react-router-dom'
 import { AuthContext } from "./authContext/AuthContext";
@@ -22,6 +23,7 @@ const App = () => {
         <Route  path="/movies"> <Home type="movie"/> </Route>
         <Route  path="/series"> <Home type="series"/> </Route>
         <Route  path="/watch"> <Watch/> </Route>
+        <Route  path="/latest"> <Latest/> </Route>
         </>
          )} 
       </Switch>

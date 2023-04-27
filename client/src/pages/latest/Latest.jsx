@@ -1,37 +1,34 @@
+
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Featured from "../../components/featured/Featured";
 import List from "../../components/list/List";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import "./home.scss";
+import "./latest.scss";
 
-export const Home = ({type}) => {
+export const Latest = ({type}) => {
   const[lists,setLists] = useState([]);
-  const[genre,setGenre] = useState(null);
 
   useEffect(()=>{
     const getRandomLists = async ()=>{
       try {
-        const res = await axios.get(`lists${type ? "?type="+type:""}
-        ${genre ? "&genre=" + genre:""}`,{
+        const res = await axios.get(`lists${type ? "?type="+type:""}`
+        ,{
           headers:{
             token:"Bearer "+ JSON.parse(localStorage.getItem("user")).accessToken,
           },
         }
         );
-        // console.log(res);
         setLists(res.data);
       } catch (err) {
           console.log(err);
       }
     };
     getRandomLists();
-  },[type,genre]);
+  },[type]);
   return (
-    <div className='home'>
+    <div className='latest'>
         <Navbar/>
-        <Featured type={type} setGenre={setGenre}/>
         {lists.map((list)=>(
           <List list={list}/>
         ))}
@@ -39,4 +36,4 @@ export const Home = ({type}) => {
         </div>
  )
 }
-export default Home;
+export default Latest;
