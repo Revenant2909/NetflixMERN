@@ -29,34 +29,34 @@ function Featured({type,setGenre}) {
                 <span>{type==="movie" ? "Movies" : "Tv Shows"}</span>
                 <select name="genre" id="genre" onChange={(e)=>setGenre(e.target.value)}>
                     <option>Genre</option>
-                     <option value="hindi">Hindi</option>
-                     <option value="tamil">Tamil</option>
-                     <option value="punjabi">Punjabi</option>
-                     <option value="telugu">Telugu</option>
-                     <option value="malyalam">Malyalam</option>
-                     <option value="marathi">Marathi</option>
-                     <option value="bengali">Bengali</option>
-                     <option value="english">English</option>
-                     <option value="international">International</option>
-                     <option value="independent">Independent</option>
-                     <option value="comedies">Comedies</option>
-                     <option value="action">Action</option>
-                     <option value="romance">Romance</option>
-                     <option value="dramas">Dramas</option>
-                     <option value="thriller">Thriller</option>
+                     <option value="Hindi">Hindi</option>
+                     <option value="Tamil">Tamil</option>
+                     <option value="Punjabi">Punjabi</option>
+                     <option value="Telugu">Telugu</option>
+                     <option value="Malyalam">Malyalam</option>
+                     <option value="Marathi">Marathi</option>
+                     <option value="Bengali">Bengali</option>
+                     <option value="English">English</option>
+                     <option value="International">International</option>
+                     <option value="Independent">Independent</option>
+                     <option value="Comedy">Comedies</option>
+                     <option value="Action">Action</option>
+                     <option value="Romance">Romance</option>
+                     <option value="Drama">Dramas</option>
+                     <option value="Thriller">Thriller</option>
                      <option value="horror">Horror</option>
-                     <option value="sci-fi">Sci-Fi</option>
-                     <option value="crime">Crime</option>
-                     <option value="fantasy">Fantasy</option>
-                     <option value="sports">Sports</option>
-                     <option value="bollywood">Bollywood</option>
-                     <option value="hollywood">Hollywood</option>
-                     <option value="children & family">Children & Family</option>
-                     <option value="award-winning">Award-Winning</option>
-                     <option value="documentaries">Documentaries</option>
-                     <option value="shorts">Shorts</option>
-                     <option value="stand-up comedy">Stand-Up Comedy</option>
-                     <option value="anime">Anime</option>
+                     <option value="Sci-fi">Sci-Fi</option>
+                     <option value="Crime">Crime</option>
+                     <option value="Fantasy">Fantasy</option>
+                     <option value="Sports">Sports</option>
+                     <option value="Bollywood">Bollywood</option>
+                     <option value="Hollywood">Hollywood</option>
+                     <option value="Children & Family">Children & Family</option>
+                     <option value="Award-winning">Award-Winning</option>
+                     <option value="Documentary">Documentaries</option>
+                     <option value="Short">Shorts</option>
+                     <option value="Stand-up-comedy">Stand-Up Comedy</option>
+                     <option value="Anime">Anime</option>
                 </select>
             </div>
         )}

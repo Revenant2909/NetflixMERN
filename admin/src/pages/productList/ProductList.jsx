@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect} from 'react'
 import "./productList.css";
 import { DataGrid} from '@mui/x-data-grid';
 import { DeleteOutline } from '@mui/icons-material';
-// import { productRows } from '../../DummyData';
 import { Link } from 'react-router-dom';
 import { MovieContext } from '../../context/movieContext/MovieContext';
 import { deleteMovie, getMovies } from '../../context/movieContext/apiCalls';
@@ -14,6 +13,7 @@ export default function ProductList() {
         getMovies(dispatch);
     },[dispatch]);
     console.log(movies);
+
     const handleDelete = (id) =>{
         deleteMovie(id,dispatch);
     };
