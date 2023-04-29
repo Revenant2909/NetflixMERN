@@ -31,7 +31,7 @@ export const Home = ({type}) => {
   return (
     <div className='home'>
         <Navbar/>
-        <Featured type={type} setGenre={setGenre}/>
+        <Featured type={type} setGenre ={setGenre}/>
         {lists.map((list)=>(
           <List list={list}/>
         ))}
